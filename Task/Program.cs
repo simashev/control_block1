@@ -11,13 +11,20 @@ using static System.Console;
 
 Write ("Введите элементы массива через через пробел: ");
 //Write ("Введите число символов, не менее: "); 
-//int count = int.Parse(ReadLine()); 
-//string [] array = new string [count];
-string array = ReadLine(); 
 
-string [] FindEllement (string [] array){
-    if {
 
+string [] array = ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+int m = 3;  //колличество символов 
+PrintArray(array);
+
+
+void PrintArray(string [] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        if (array[i].Length <= m)
+        Write ($"{array[i]}; ");
     }
-    return array;
 }
+
+

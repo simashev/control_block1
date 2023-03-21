@@ -10,7 +10,7 @@ using System;
 using static System.Console; 
 
 Write ("Введите элементы массива через через пробел: ");
-//Write ("Введите число символов, не менее: "); 
+
 
 
 string [] array = ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
